@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+:root{
+    
+    --cor1: #E8EFFF;
+    --cor2: #6694FF;
+    --cor3: #004CFC;
+    --cor4: #31477A;
+    --cor5: #0B1A3C;
+
+    --fontePadrao: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+}
+
+*{
+
+    font-family: var(--fontePadrao);
+    margin: 0px;
+    padding: 0px;
+
+}
+
+main{
+
+    background-color: var(--cor5);
+    padding: 50px;
+
+}
+
+#about{
+
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    min-height: 60px;
+}

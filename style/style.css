@@ -20,22 +20,6 @@
 
 }
 
-#home{
-
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    text-align: right;
-    padding: 14px;
-
-}
-
-#home > a{
-
-
-}
-
-
 .default {
 
     max-width: 900px;
@@ -43,15 +27,72 @@
     padding: 30px;
     border-radius: 30px;
     margin: auto;
-    margin: 50px auto 50px auto;
+    margin: 100px auto;
+    font-weight: lighter;
+    font-size: 20px;
+    
 }
+
+#home {
+    position: fixed;
+    background-color: white;
+    width: calc(100% - 20px);
+    padding: 10px;
+    display: flex; /* Flexbox para alinhar os itens */
+    justify-content: space-between; /* Manter a foto e nome à esquerda e os links à direita */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.profile {
+    display: flex;
+    align-items: center; /* Alinha imagem e nome verticalmente */
+    flex-grow: 1; /* Ocupa o espaço disponível para empurrar os links para a direita */
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+#cornerPicture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.profile:hover{
+
+    color: var(--cor2);
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alinha os links à direita */
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding: 1px 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+
+    color: var(--cor2);
+    background-color: rgba(27, 47, 114, 0.096);
+
+}
+
 
 #apresentation{
 
     background-color: var(--cor5);
     padding: 50px;
     font-size: 20px;
-    font-weight: lighter;
     text-align: center;
 
 }
@@ -59,6 +100,7 @@
 #greetings{
 
     padding-bottom: 50px;
+    margin-top: 200px;
 
 }
 
@@ -71,7 +113,7 @@
 
 #apresentation p{
 
-    margin: 10px 50px 50px 50px;
+    margin: 10px 20px 50px 20px;
 
 }
 
@@ -84,6 +126,13 @@
     font-weight: 700;
     border-radius: 10px;
     letter-spacing: 2px;
+    transition-duration: 0.5s;
+
+}
+
+#apresentation a:hover{
+
+    background-color: var(--cor4);
 
 }
 
@@ -98,6 +147,19 @@
     #apresentation{
 
         font-size: 20px;
+
+    }
+
+    #home > a{
+
+        font-size: 0.9em;
+        margin-left: 10px;
+
+    }
+
+    .profile{
+
+        font-size: 0.9em;
 
     }
 
@@ -120,9 +182,16 @@ main{
 
 }
 
-#about{
+#aboutContent p {
 
-    
+    text-indent: 20px;
+
+}
+
+#aboutContent h1{
+
+    font-size: 30px;
+    margin-bottom: 20px;
 
 }
 

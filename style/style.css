@@ -33,6 +33,12 @@
     
 }
 
+.default h1{
+
+    font-size: 30px;
+
+}
+
 #home {
     position: fixed;
     background-color: white;
@@ -41,6 +47,7 @@
     display: flex; /* Flexbox para alinhar os itens */
     justify-content: space-between; /* Manter a foto e nome à esquerda e os links à direita */
     align-items: center; /* Centraliza verticalmente */
+    border-bottom: 1px solid black;
 }
 
 .profile {
@@ -246,6 +253,34 @@ main{
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+}
+
+.workExamples{
+
+    border: 1px solid black;
+    width: 220px;
+    height: 280px;
+    padding: 2px;
+
+}
+.workExamples img{
+
+    width: 220px;
+
+}
+
+.portfolioText h2{
+
+    font-size: 21px;
+    margin-bottom: 7px;
+
+}
+
+.portfolioText{
+
+    padding: 10px;
+    font-size: 17px;
+
 }
 
 footer{

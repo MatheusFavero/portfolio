@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 :root{
-    
     --cor1: #E8EFFF;
     --cor2: #6694FF;
     --cor3: #004CFC;
@@ -13,7 +12,6 @@
 }
 
 *{
-
     font-family: var(--fontePadrao);
     margin: 0px;
     padding: 0px;
@@ -21,7 +19,6 @@
 }
 
 .default {
-
     max-width: 900px;
     background-color: white;
     padding: 30px;
@@ -34,7 +31,6 @@
 }
 
 .default h1{
-
     font-size: 30px;
 
 }
@@ -48,6 +44,7 @@
     justify-content: space-between; /* Manter a foto e nome à esquerda e os links à direita */
     align-items: center; /* Centraliza verticalmente */
     border-bottom: 1px solid black;
+
 }
 
 .profile {
@@ -56,6 +53,7 @@
     flex-grow: 1; /* Ocupa o espaço disponível para empurrar os links para a direita */
     font-weight: bold;
     transition-duration: 0.5s;
+
 }
 
 #cornerPicture {
@@ -63,10 +61,10 @@
     height: 50px;
     border-radius: 50px;
     margin-right: 10px;
+
 }
 
 .profile span:hover{
-
     color: var(--cor2);
 
 }
@@ -74,6 +72,7 @@
 nav {
     display: flex;
     justify-content: flex-end; /* Alinha os links à direita */
+
 }
 
 nav > a {
@@ -85,10 +84,10 @@ nav > a {
     padding: 1px 5px;
     border-radius: 5px;
     transition-duration: 0.5s;
+
 }
 
 nav > a:hover{
-
     color: var(--cor2);
     background-color: rgba(27, 47, 114, 0.096);
 
@@ -96,7 +95,6 @@ nav > a:hover{
 
 
 #apresentation{
-
     background-color: var(--cor5);
     padding: 50px;
     font-size: 20px;
@@ -105,27 +103,23 @@ nav > a:hover{
 }
 
 #greetings{
-
     padding-bottom: 50px;
     margin-top: 200px;
 
 }
 
 #apresentation h1{
-
     font-size: 40px;
     font-weight: 900;
 
 }
 
 #apresentation p{
-
     margin: 10px 20px 50px 20px;
 
 }
 
 #apresentation a{
-
     background-color: var(--cor2);
     padding: 10px 30px;
     color: white;
@@ -138,7 +132,6 @@ nav > a:hover{
 }
 
 #apresentation a:hover{
-
     background-color: var(--cor4);
 
 }
@@ -146,26 +139,22 @@ nav > a:hover{
 @media (max-width: 650px) {
 
     #apresentation h1 {
-
         font-size: 30px;
 
     }
 
     #apresentation{
-
         font-size: 20px;
 
     }
 
     #home > a{
-
         font-size: 0.9em;
         margin-left: 10px;
 
     }
 
     .profile{
-
         font-size: 0.9em;
 
     }
@@ -175,14 +164,12 @@ nav > a:hover{
 @media (min-width: 1200px) {
 
     #apresentation h1 {
-
         font-size: 60px;
 
     }
 }
 
 main{
-
     background-color: var(--cor5);
     padding: 50px;
 
@@ -192,46 +179,56 @@ main{
     display: flex;
     flex-direction: column;
     gap: 20px;
+
 }
 
 #aboutContent img {
     max-width: 300px;
     object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve embaixo */
+                0 2px 4px rgba(0, 0, 0, 0.06); /* Sombra mais sutil ao redor */
+    transition: box-shadow 0.3s ease; /* Transição suave para quando houver hover */
+    
+}
+
+#aboutContent img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* Sombra mais intensa ao passar o mouse */
+                0 4px 8px rgba(0, 0, 0, 0.12); /* Aumenta o destaque da sombra ao redor */
+
 }
 
 @media (min-width: 850px) {
+
     #aboutContent {
         flex-direction: row;
         justify-content: space-between;
+
     }
+
     #aboutText {
         text-align: left;
+
     }
 }
 
 #aboutContent p {
-
     text-indent: 20px;
 
 }
 
 #aboutContent h1{
-
     font-size: 30px;
     margin-bottom: 20px;
 
 }
 
 #aboutContent img{
-
     display: block;
     margin: 20px auto;
-    max-width: 100%;
 
 }
 
 #skills h1{
-
     color: white;
     font-size: 25px;
     text-align: center;
@@ -244,6 +241,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 #skills li {
@@ -253,32 +251,61 @@ main{
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+
 }
 
-.workExamples{
+#portfolioItems {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha em telas menores */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
 
-    border: 1px solid black;
+}
+
+.workExamples {
+    border: 1px solid rgba(0, 0, 0, 0.719);
+    border-radius: 3px;
     width: 220px;
     height: 280px;
     padding: 2px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Certifica-se de que os conteúdos internos estejam empilhados */
+    align-items: center; /* Centraliza os itens dentro do card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), /* Sombra leve embaixo */
+                0 2px 4px rgba(0, 0, 0, 0.06); /* Sombra mais sutil ao redor */
+    transition: box-shadow 0.3s ease; /* Transição suave para quando houver hover */
 
 }
-.workExamples img{
 
-    width: 220px;
+.workExamples:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), /* Sombra mais intensa ao passar o mouse */
+                0 4px 8px rgba(0, 0, 0, 0.12); /* Aumenta o destaque da sombra ao redor */
 
+}
+
+.workExamples img {
+    width: 100%; /* Garante que a imagem ocupe 100% do card */
+
+}
+
+/* Para telas mais estreitas, os itens serão empilhados */
+@media (max-width: 650px) {
+
+    #portfolioItems {
+        flex-direction: column;
+        align-items: center;
+
+    }
 }
 
 .portfolioText h2{
-
     font-size: 21px;
     margin-bottom: 7px;
 
 }
 
 .portfolioText{
-
     padding: 10px;
     font-size: 17px;
 
@@ -289,4 +316,5 @@ footer{
     color: white;
     padding: 20px;
     min-height: 60px;
+
 }

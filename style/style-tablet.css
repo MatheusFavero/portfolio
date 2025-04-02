@@ -1,0 +1,16 @@
+/* style-tablet.css */
+
+#apresentation h1 {
+    font-size: 40px;
+}
+
+#aboutContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#aboutContent img {
+    max-width: 300px;
+    object-fit: cover;
+}

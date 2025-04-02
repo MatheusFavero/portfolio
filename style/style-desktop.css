@@ -1,15 +1,1 @@
 /* style-desktop.css */
-
-#apresentation h1 {
-    font-size: 60px;
-}
-
-#aboutContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#aboutText {
-    text-align: left;
-}

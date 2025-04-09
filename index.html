@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matheus Favero</title>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <!-- Estilos padrão -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -29,10 +31,16 @@
 
             <a href="./#apresentation">HOME</a>
             <a href="./#about">SOBRE</a>
-            <a href="./#portfolio">PORTIFÓLIO</a>
+            <a href="./#projects">PROJETOS</a>
             <a href="./#contact">CONTATO</a>
 
         </nav>
+
+        
+
+    </header>
+    
+    <main>
 
         <div id="apresentation">
 
@@ -48,17 +56,16 @@
         
         </div>
 
-    </header>
-    
-    <main>
-
         <section id="about">
             <p>&nbsp</p>
 
             <section id="aboutContent" class="default">
                 <div id="aboutText"> <h1>Sobre mim</h1>
-                <p>Nasci em 2003 e moro em Francisco Beltrão no Paraná.</p>
-                <p>Sou formado em Análise e desenvolvimento de sistemas e busco ser um desenvolvedor full stack.</p>
+                <p>Olá! Meu nome é Matheus Favero, sou formado em Análise e Desenvolvimento de Sistemas e estou estudando para me tornar um desenvolvedor full stack. Moro em Francisco Beltrão, Paraná, e busco oportunidades para ganhar experiência na área.
+
+                <p>Meu objetivo é criar soluções eficientes, unindo funcionalidade, performance e uma boa experiência para o usuário. Estou sempre aprimorando minhas habilidades e explorando novas abordagens no desenvolvimento de software.</p>
+                
+                <p>Se quiser saber mais sobre meu trabalho, entre em contato!</p>
                 </div>
                 <img src="images/matheusFavero.jpg" alt="Matheus Favero">
             </section>
@@ -73,7 +80,6 @@
                         <li>Github</li>
                         <li>C básico</li>
                         <li>Java básico</li>
-                        <li>Terminal básico</li>
                         <li>SQL básico</li>
                     </ul>
 
@@ -81,25 +87,25 @@
 
         </section>
 
-        <section id="portfolio">
+        <section id="projects">
             <p>&nbsp</p>
 
-            <section id="portfolioContent" class="default">
+            <section id="projectsContent" class="default">
 
-                <h1>Portifólio</h1>
-                <p>Aqui você encontra alguns dos meus projetos.</p>
+                <h1>Projetos</h1>
+                <p>Aqui você encontra alguns dos meus projetos selecionados.</p>
 
-                <div id="portfolioItems">
+                <div id="projectsItems">
                     <div class="workExamples">
                         <img src="images/portfolioExample.jpg" alt="Exemplo do meu portifólio">
-                        <div class="portfolioText">
+                        <div class="projectsText">
                             <h2>Meu portifólio</h2>
                             <p>Portifólio criado por mim para divulgar meu trabalho de forma prática e responsiva para se adaptar a diversos dispositivos.</p>
                         </div>
                     </div>
                     <div class="workExamples">
                         <img src="images/androidSiteExample.png" alt="Exemplo do meu portifólio">
-                        <div class="portfolioText">
+                        <div class="projectsText">
                             <h2>Site sobre android</h2>
                             <p>Um site criado para meus estudos de HTML e CSS, contando a história e as curiosidades do  sistema android e seu mascote.</p>
                         </div>
@@ -112,21 +118,47 @@
 
         <section  id="contact">
             <p>&nbsp</p>
-
             <section id="contactContent" class="default">
-
                 <h1>Contato</h1>
-                <p></p>
-
+                <p>Sinta se a vontade para entrar em contato!</p>
+                <form action="https://formspree.io/f/mnnplnyk" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Digite sua mensagem aqui" required></textarea>
+                <div>
+                        <button type="submit">ENVIAR</button>
+                </div>
+                </form>
             </section>
-
         </section>
-
     </main>
 
-    <footer>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam quod ad distinctio adipisci debitis officia saepe odio aliquid, libero harum consectetur culpa alias sint, omnis similique voluptate, quaerat deserunt.</p>
+    <footer class="footer">
+        <div class="footer-left">
+        <p>Desenvolvido por <strong>Matheus Favero</strong></p>
+        </div>
+    
+        <div class="footer-right">
+        <div class="social-text">
+            <h1>Social</h1>
+        </div>
+        <div class="social-icons">
+            <a href="https://instagram.com/matheusfavero" target="_blank" title="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-favero-814a70251/" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/matheusfavero" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        </div>
     </footer>
-
 </body>
 </html>

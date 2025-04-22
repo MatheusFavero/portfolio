@@ -71,6 +71,12 @@ nav {
 }
 
 /* Estilo original dos links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza os links */
+}
+
 .nav-links a {
     text-decoration: none;
     color: black;
@@ -97,12 +103,6 @@ nav {
     font-size: 1.5em;
     cursor: pointer;
     color: black;
-}
-
-/* Ocultar os links do menu em telas menores */
-.nav-links {
-    display: flex;
-    gap: 20px;
 }
 
 #apresentation{

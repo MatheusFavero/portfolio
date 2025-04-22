@@ -316,7 +316,7 @@ footer.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     background-color: #111;
     color: white;
     flex-wrap: wrap;
@@ -326,10 +326,10 @@ footer.footer {
     flex: 1;
     min-width: 200px;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1em;
 
     strong{
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
 }
 
@@ -341,7 +341,7 @@ footer.footer {
 
 .footer-right h1 {
     margin-bottom: 10px;
-    font-size: 1.8em;
+    font-size: 1.3em;
 }
 
 .social-icons a {

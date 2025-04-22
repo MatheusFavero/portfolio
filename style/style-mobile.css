@@ -1,0 +1,53 @@
+/* style-mobile.css */
+
+.menu-toggle {
+    display: block; /* Exibe o botão hamburguer */
+}
+
+.nav-links {
+    display: none; /* Oculta os links inicialmente */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.nav-links a {
+    margin: 10px 0;
+    text-align: left; /* Alinha os links à esquerda */
+}
+
+.nav-links.active {
+    display: flex; /* Exibe os links quando ativo */
+}
+
+#apresentation h1 {
+    font-size: 30px;
+}
+
+#apresentation{
+
+    font-size: 20px;
+}
+
+#home > a{
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+
+.profile{
+    font-size: 0.9em;
+}
+footer{
+    font-size: 0.7em;
+}
+#contactContent {
+    label{
+        font-size: 0.9em;
+    }
+}

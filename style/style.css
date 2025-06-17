@@ -7,7 +7,7 @@
     --cor2: #6694FF;
     --cor3: #004CFC;
     --cor4: #31477A;
-    --cor5: #0B1A3C;
+    --cor5: #0B1633;
     --fontePadrao: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 }
 
@@ -25,6 +25,7 @@
     margin: 200px auto;
     font-weight: lighter;
     font-size: 20px;
+    z-index: 1;
 }
 
 .default h1{
@@ -147,7 +148,16 @@ nav {
 
 main{
     background-color: var(--cor5);
-    padding: 50px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+#starCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
 }
 
 #aboutContent {
@@ -359,4 +369,17 @@ footer.footer {
 .social-icons a:hover i {
     transform: scale(1.2);
     color: #999;
+}
+
+#home,
+.default,
+#greetings,
+#apresentation,
+#aboutContent,
+#skills,
+#projectsItems,
+#contactContent,
+footer {
+    position: relative;
+    z-index: 1;
 }
